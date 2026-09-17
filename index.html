@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Agropecuária</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- TELA INICIAL -->
+    <section id="tela-inicial" class="tela">
+        <div class="capa">
+
+            <div class="icone-fazenda">🌾</div>
+
+            <p class="subtitulo">DESAFIO DA FAZENDA</p>
+
+            <h1>Missão<br><span>Agropecuária</span></h1>
+
+            <p class="descricao">
+                Em uma fazenda do futuro, decisões importantes precisam ser tomadas
+                para garantir uma produção eficiente e sustentável.
+            </p>
+
+            <div class="informacoes">
+                <div>
+                    <strong>🌱</strong>
+                    <span>Sustentabilidade</span>
+                </div>
+
+                <div>
+                    <strong>🐄</strong>
+                    <span>Pecuária</span>
+                </div>
+
+                <div>
+                    <strong>🚜</strong>
+                    <span>Agricultura</span>
+                </div>
+            </div>
+
+            <button id="btn-iniciar" class="botao-principal">
+                Começar a missão 🚜
+            </button>
+
+            <p class="rodape-capa">
+                Prepare-se para testar seus conhecimentos!
+            </p>
+
+        </div>
+    </section>
+
+
+    <!-- TELA DO JOGO -->
+    <section id="tela-jogo" class="tela escondido">
+
+        <header class="cabecalho">
+            <div>
+                <span class="logo">🌾 AgroFazenda</span>
+            </div>
+
+            <div class="progresso-container">
+                <span id="numero-pergunta">Pergunta 1</span>
+
+                <div class="barra">
+                    <div id="barra-progresso"></div>
+                </div>
+            </div>
+        </header>
+
+
+        <main class="conteudo">
+
+            <div class="personagem">
+                <div class="avatar">👨‍🌾</div>
+
+                <div class="fala">
+                    <p id="texto-personagem">
+                        Olá! Vamos começar nossa missão?
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="cartao-pergunta">
+
+                <span class="categoria">DESAFIO AGROPECUÁRIO</span>
+
+                <h2 id="pergunta">
+                    Pergunta aparecerá aqui
+                </h2>
+
+                <div id="alternativas" class="alternativas">
+                    <!-- Alternativas criadas pelo JavaScript -->
+                </div>
+
+            </div>
+
+            <div id="mensagem" class="mensagem"></div>
+
+        </main>
+
+    </section>
+
+
+    <!-- TELA FINAL -->
+    <section id="tela-final" class="tela escondido">
+
+        <div class="resultado">
+
+            <div class="trofeu">🏆</div>
+
+            <p class="subtitulo">MISSÃO CONCLUÍDA</p>
+
+            <h1>Parabéns, <span id="nome-final">agricultor</span>!</h1>
+
+            <p id="texto-resultado">
+                Você concluiu o desafio da fazenda.
+            </p>
+
+            <div class="pontuacao">
+                <span>Sua pontuação</span>
+                <strong id="pontuacao">0</strong>
+                <small>pontos</small>
+            </div>
+
+            <div class="resultado-mensagem" id="resultado-mensagem">
+                Excelente trabalho!
+            </div>
+
+            <button id="btn-jogar-novamente" class="botao-principal">
+                🔄 Jogar Novamente
+            </button>
+
+            <button id="btn-voltar" class="botao-secundario">
+                🏠 Voltar ao início
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
